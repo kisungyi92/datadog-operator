@@ -19,3 +19,18 @@ spec:
     nodeAgent:
       image:
         name: gcr.io/datadoghq/agent:latest
+  features:
+    apm:
+      enabled: true
+    liveProcessCollection:
+      enabled: true
+    logCollection:
+      enabled: true
+    admissionController:
+      enabled: true
+    externalMetricsServer:
+      enabled: true
+    cspm:
+      enabled: true
+    cws:
+      enabled: true
