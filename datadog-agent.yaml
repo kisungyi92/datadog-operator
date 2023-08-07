@@ -32,5 +32,5 @@ spec:
       enabled: true
     cspm:
       enabled: true
-    cws:
+    prometheusScrape:
       enabled: true
