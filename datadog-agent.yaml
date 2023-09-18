@@ -19,6 +19,9 @@ spec:
     nodeAgent:
       image:
         name: gcr.io/datadoghq/agent:latest
+      env:
+      - name: DD_COLLECT_EC2_TAGS_USE_IMDS
+        value: true
   features:
     apm:
       enabled: true
@@ -34,3 +37,7 @@ spec:
       enabled: true
     prometheusScrape:
       enabled: true
+  override:
+    nodeAgent:
+      containers:
+        agent:
