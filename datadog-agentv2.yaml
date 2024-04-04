@@ -23,9 +23,9 @@ source:
 
       datadog:
 
-        apiKey: "$DATADOG_APIKEY"
+        apiKeyExistingSecret: datadog-secret
 
-        appKey: "$DATADOG_APPKEY"
+        appKeyExistingSecret: datadog-secret
 
         site: datadoghq.com
 
