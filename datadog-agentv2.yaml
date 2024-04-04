@@ -17,7 +17,7 @@ source:
 
   helm:
 
-    releaseName: kmx-datadog
+    releaseName: datadog
 
     values: |
 
